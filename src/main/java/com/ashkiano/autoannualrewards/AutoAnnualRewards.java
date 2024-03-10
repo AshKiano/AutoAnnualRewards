@@ -13,6 +13,7 @@ public class AutoAnnualRewards extends JavaPlugin implements Listener {
     public void onEnable() {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(this, this);
+        Metrics metrics = new Metrics(this, 21295);
     }
 
     @EventHandler
